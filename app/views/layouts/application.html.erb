@@ -2,19 +2,19 @@
 <html>
   <head>
     <title>Jobs</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %> <%= csp_meta_tag %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <%= stylesheet_link_tag 'application', media: 'all',
+    'data-turbolinks-track': 'reload' %> <%= javascript_pack_tag 'application',
+    'data-turbolinks-track': 'reload', defer: true %> <% analytics_init if
+    Google_Analytics.valid_tracker? %>
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-
-    <%= yield %>
+    <%= render 'shared/navbar' %> <%= render 'shared/flashes' %> <%= yield %>
   </body>
 </html>

@@ -22,6 +22,7 @@ gem 'redis', '~> 4.0'
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
 gem 'sinatra'
+gem 'google-analytics-rails', '1.1.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
